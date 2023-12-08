@@ -32,8 +32,10 @@
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вихідToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.довідникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.кафедриToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.конференціїToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.звітиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.місцяПроживанняToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,15 +64,25 @@
             // вихідToolStripMenuItem
             // 
             this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
-            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.вихідToolStripMenuItem.Text = "Вихід";
             this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
             // 
             // довідникиToolStripMenuItem
             // 
+            this.довідникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.кафедриToolStripMenuItem,
+            this.місцяПроживанняToolStripMenuItem});
             this.довідникиToolStripMenuItem.Name = "довідникиToolStripMenuItem";
             this.довідникиToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
             this.довідникиToolStripMenuItem.Text = "Довідники";
+            // 
+            // кафедриToolStripMenuItem
+            // 
+            this.кафедриToolStripMenuItem.Name = "кафедриToolStripMenuItem";
+            this.кафедриToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
+            this.кафедриToolStripMenuItem.Text = "Кафедри";
+            this.кафедриToolStripMenuItem.Click += new System.EventHandler(this.кафедриToolStripMenuItem_Click);
             // 
             // конференціїToolStripMenuItem
             // 
@@ -83,6 +95,13 @@
             this.звітиToolStripMenuItem.Name = "звітиToolStripMenuItem";
             this.звітиToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.звітиToolStripMenuItem.Text = "Звіти";
+            // 
+            // місцяПроживанняToolStripMenuItem
+            // 
+            this.місцяПроживанняToolStripMenuItem.Name = "місцяПроживанняToolStripMenuItem";
+            this.місцяПроживанняToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
+            this.місцяПроживанняToolStripMenuItem.Text = "Місця проживання";
+            this.місцяПроживанняToolStripMenuItem.Click += new System.EventHandler(this.місцяПроживанняToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -109,6 +128,8 @@
         private System.Windows.Forms.ToolStripMenuItem довідникиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem конференціїToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem звітиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem кафедриToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem місцяПроживанняToolStripMenuItem;
     }
 }
 
